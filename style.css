@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.muchotexto{
+ float: left;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+height:200px;
+resize: vertical;
+
+}
+input[type=text] {
+margin: 5px 0}
+}

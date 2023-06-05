@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  .container {
+  display: flex; /* Displays the container as a flexbox */
+  justify-content: space-between; /* Aligns the items with space-between */
+}
+
+.right-aligned {
+  align-self: flex-start; /* Aligns the item to the top of the container */
+  word-break: break-all;
+ }
+
+.centered {
+  align-self: start; /* Aligns the item to the center of the container */
+  word-break: break-all;
+  text-align: start;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.left-aligned {
+  align-self: flex-end; /* Aligns the item to the bottom of the container */
+  word-break: break-all;
+
+}
+</style>
+<body onload = "loading1()">
+
+
+  <div id="myDiv"></div>
+  Amongus world
+  <a href="html/diary">Contact Information</a>
+
+      <button onclick="dude()" id="dude">Fake Submit</button>
+
+ 
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+  <script >
+function dude(){
+ 
+  let c=  localStorage.getItem("newentry")
+    console.log(c)
+   document.getElementById("myDiv").innerHTML += c;
+
+}
+    function loading1(){
+let a = localStorage.getItem("all")
+ document.getElementById("myDiv").innerHTML += a;
+}
+  </script>
+</html>
